@@ -55,11 +55,11 @@ export const LegalModal: React.FC<LegalModalProps> = ({ type, onClose }) => {
           </p>
           <h4 className="font-bold text-white text-base">2. Offer Completion Requirements</h4>
           <p>
-            Discount vouchers and codes between $100 and $500 require successful completion of the specified number of sponsor activities (e.g., surveys, app reviews, or promotional partner signups) within the allotted timeframe.
+            Discount vouchers and codes between $100 and $750 require successful completion of the specified number of sponsor activities (e.g., surveys, app reviews, or promotional partner signups) within the allotted timeframe.
           </p>
           <h4 className="font-bold text-white text-base">3. Trademark Notice</h4>
           <p>
-            Spirit Halloween and all associated logos, characters, and trademarks are the registered property of Spencer Gifts LLC. This promotional showcase is an independent affiliate matching service and is not operated, directly sponsored, or endorsed by Spirit Halloween.
+            Spirit Christmas™ and Spirit Halloween® and all associated logos, characters, and trademarks are the registered property of Spencer Gifts LLC. This promotional showcase is an independent affiliate matching service and is not operated, directly sponsored, or endorsed by Spirit Christmas or Spencer Gifts LLC.
           </p>
         </div>
       ),

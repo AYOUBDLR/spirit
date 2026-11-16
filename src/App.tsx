@@ -21,8 +21,8 @@ export default function App() {
   };
 
   return (
-    <div className="min-h-screen bg-[#0b0813] text-white flex flex-col justify-between selection:bg-orange-500 selection:text-white relative">
-      {/* Ambient background fog & particles */}
+    <div className="min-h-screen bg-[#0b1017] text-white flex flex-col justify-between selection:bg-red-600 selection:text-white relative">
+      {/* Ambient background fog & snow particles */}
       <SpookyBackground />
 
       {/* Main Content Container - centered card feed matching screenshots */}
@@ -34,63 +34,63 @@ export default function App() {
           <div className="flex items-center justify-center text-center flex-wrap gap-x-2">
             <h1 className="text-2xl sm:text-[32px] font-black tracking-tight text-white inline-flex items-center gap-2">
               <span>Today's top</span>
-              <span className="font-creepster text-[#ff6200] text-3xl sm:text-[38px] tracking-wider uppercase drop-shadow-[0_2px_12px_rgba(255,98,0,0.5)]">
+              <span className="font-christmas text-[#dc2626] text-3xl sm:text-[40px] tracking-wider uppercase drop-shadow-[0_2px_14px_rgba(220,38,38,0.6)]">
                 PROMOTION
               </span>
             </h1>
           </div>
 
           {/* Subheader: 1 offer live & Updated today */}
-          <div className="flex items-center justify-between text-xs sm:text-[13px] text-[#9a91ad] font-medium mt-2 px-1">
+          <div className="flex items-center justify-between text-xs sm:text-[13px] text-[#8e9faf] font-medium mt-2 px-1">
             <div className="flex items-center gap-1.5">
               <span>1 offer live</span>
             </div>
             <div className="flex items-center gap-1.5">
-              <span className="w-2 h-2 rounded-full bg-[#ff6200] inline-block animate-pulse shadow-[0_0_8px_#ff6200]" />
+              <span className="w-2 h-2 rounded-full bg-[#dc2626] inline-block animate-pulse shadow-[0_0_8px_#dc2626]" />
               <span>Updated today</span>
             </div>
           </div>
         </header>
 
-        {/* Featured Card matching Screenshot 1 */}
-        <section aria-label="Featured Spirit Halloween Promotion">
-          <HalloweenPromotionCard />
-        </section>
-
-        {/* How It Works Section matching Screenshot 2 */}
-        <section aria-label="How It Works Guide">
+        {/* How It Works Section before Claim */}
+        <section aria-label="How It Works Guide" className="mb-6">
           <HowItWorksSteps />
         </section>
 
+        {/* Featured Claim Card */}
+        <section aria-label="Featured Spirit Christmas Promotion">
+          <HalloweenPromotionCard />
+        </section>
+
         {/* Bottom Legal Links & Disclaimers */}
-        <footer className="mt-8 pt-4 pb-2 text-center text-xs text-[#827a94] space-y-3">
+        <footer className="mt-8 pt-4 pb-2 text-center text-xs text-[#718296] space-y-3">
           {/* Links Row matching Screenshot 2 */}
           <div className="flex items-center justify-center gap-2 sm:gap-3 text-xs sm:text-[13px]">
             <button
               onClick={() => setActiveLegalModal('privacy')}
-              className="text-[#9e96b3] hover:text-orange-400 transition-colors underline-offset-4 hover:underline cursor-pointer"
+              className="text-[#98a8bc] hover:text-red-400 transition-colors underline-offset-4 hover:underline cursor-pointer"
             >
               Privacy Policy
             </button>
-            <span className="text-[#493d62]" aria-hidden="true">·</span>
+            <span className="text-[#32455e]" aria-hidden="true">·</span>
             <button
               onClick={() => setActiveLegalModal('terms')}
-              className="text-[#9e96b3] hover:text-orange-400 transition-colors underline-offset-4 hover:underline cursor-pointer"
+              className="text-[#98a8bc] hover:text-red-400 transition-colors underline-offset-4 hover:underline cursor-pointer"
             >
               Terms
             </button>
-            <span className="text-[#493d62]" aria-hidden="true">·</span>
+            <span className="text-[#32455e]" aria-hidden="true">·</span>
             <button
               onClick={() => setActiveLegalModal('affiliate')}
-              className="text-[#9e96b3] hover:text-orange-400 transition-colors underline-offset-4 hover:underline cursor-pointer"
+              className="text-[#98a8bc] hover:text-red-400 transition-colors underline-offset-4 hover:underline cursor-pointer"
             >
               Affiliate Disclosure
             </button>
           </div>
 
           {/* Independent Trademark Notice */}
-          <p className="text-[11px] text-[#69617d] leading-normal max-w-sm mx-auto">
-            Independent promotional directory. Spirit Halloween® is a registered trademark of Spencer Gifts LLC.
+          <p className="text-[11px] text-[#55677d] leading-normal max-w-sm mx-auto">
+            Independent promotional directory. Spirit Christmas™ and Spirit Halloween® are registered trademarks of Spencer Gifts LLC.
           </p>
         </footer>
 

@@ -3,7 +3,7 @@ import {
   X, Check, ArrowRight, ShieldCheck, Mail, Sparkles, 
   ExternalLink, Copy, CheckCircle, Clock, Gift, Lock, RefreshCw, AlertCircle
 } from 'lucide-react';
-import voucherImage from '../assets/images/spirit_halloween_store_500_1792396229574.jpg';
+import voucherImage from '../assets/images/spirit_christmas_store_750_1794623550854.jpg';
 
 interface ClaimModalProps {
   isOpen: boolean;
@@ -13,7 +13,7 @@ interface ClaimModalProps {
 
 export const ClaimModal: React.FC<ClaimModalProps> = ({ isOpen, onClose, initialStep = 1 }) => {
   const [currentStep, setCurrentStep] = useState(1);
-  const [selectedTier, setSelectedTier] = useState<number>(500);
+  const [selectedTier, setSelectedTier] = useState<number>(750);
   const [email, setEmail] = useState('');
   const [fullName, setFullName] = useState('');
   const [agreeTerms, setAgreeTerms] = useState(true);
@@ -153,7 +153,7 @@ export const ClaimModal: React.FC<ClaimModalProps> = ({ isOpen, onClose, initial
                 {[
                   { value: 100, label: '$100', offers: '1 Deal required' },
                   { value: 250, label: '$250', offers: '2 Deals required', popular: true },
-                  { value: 500, label: '$500', offers: '3 Deals required', best: true },
+                  { value: 750, label: '$750', offers: '3 Deals required', best: true },
                 ].map((tier) => (
                   <button
                     key={tier.value}

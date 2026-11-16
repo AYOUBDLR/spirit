@@ -1,6 +1,6 @@
 {
-  "name": "Spirit Halloween Promotion Landing Page",
-  "description": "Exclusive Spirit Halloween $100–$500 discount promotion and voucher claim page with interactive multi-step rewards flow.",
+  "name": "Spirit Christmas Promotion Landing Page",
+  "description": "Exclusive Spirit Christmas $500 holiday discount promotion and festive voucher claim page.",
   "requestFramePermissions": [],
   "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
 }

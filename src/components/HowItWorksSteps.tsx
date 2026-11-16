@@ -10,7 +10,7 @@ export const HowItWorksSteps: React.FC<HowItWorksStepsProps> = () => {
     {
       num: 1,
       title: 'Tap the button continue',
-      description: 'Click on the button above to get started',
+      description: 'Click on the button below to get started',
       icon: Navigation,
       iconRotate: 'rotate-45',
     },
@@ -24,18 +24,18 @@ export const HowItWorksSteps: React.FC<HowItWorksStepsProps> = () => {
     {
       num: 3,
       title: 'Complete 2–3 simple offers',
-      description: 'The more you do, the more you earn',
+      description: 'The more you do, the higher chance you have to earn',
       icon: ListChecks,
       iconRotate: '',
     },
   ];
 
   return (
-    <div className="w-full mt-7 space-y-3.5">
+    <div className="w-full mt-2 space-y-3.5">
       {/* Section Header */}
       <div className="flex items-center gap-2 px-1">
         <h3 className="text-xl sm:text-[22px] font-bold text-white tracking-tight flex items-center gap-2">
-          How It Works <span className="text-xl select-none">🎃</span>
+          How It Works <span className="text-xl select-none">🎄</span>
         </h3>
       </div>
 
@@ -46,11 +46,11 @@ export const HowItWorksSteps: React.FC<HowItWorksStepsProps> = () => {
           return (
             <div
               key={step.num}
-              className="relative bg-[#13101c] border border-[#261f38] rounded-[20px] p-3.5 sm:p-4 flex items-center justify-between gap-3.5 shadow-md shadow-black/40"
+              className="relative bg-[#101722] border border-[#213045] rounded-[20px] p-3.5 sm:p-4 flex items-center justify-between gap-3.5 shadow-md shadow-black/40"
             >
               <div className="flex items-center gap-3.5 min-w-0">
-                {/* Purple Icon Container with warm amber icon */}
-                <div className="w-12 h-12 rounded-[14px] bg-[#221836] border border-[#372658] flex items-center justify-center shrink-0 text-[#f5a623]">
+                {/* Festive Icon Container with warm gold icon */}
+                <div className="w-12 h-12 rounded-[14px] bg-[#182738] border border-[#2c435e] flex items-center justify-center shrink-0 text-[#f59e0b]">
                   <IconComponent className={`w-5 h-5 ${step.iconRotate} stroke-[2.2]`} />
                 </div>
 
@@ -59,14 +59,14 @@ export const HowItWorksSteps: React.FC<HowItWorksStepsProps> = () => {
                   <h4 className="text-[15px] sm:text-base font-bold text-white leading-snug truncate">
                     {step.title}
                   </h4>
-                  <p className="text-xs sm:text-[13px] text-[#938ba3] leading-relaxed truncate">
+                  <p className="text-xs sm:text-[13px] text-[#8e9faf] leading-relaxed truncate">
                     {step.description}
                   </p>
                 </div>
               </div>
 
-              {/* Solid Orange Step Badge */}
-              <div className="w-8 h-8 rounded-full bg-[#ff6200] text-white font-extrabold text-sm flex items-center justify-center shrink-0 shadow-sm shadow-orange-950/60 select-none">
+              {/* Solid Festive Red/Gold Step Badge */}
+              <div className="w-8 h-8 rounded-full bg-gradient-to-br from-[#dc2626] to-[#b91c1c] text-white font-extrabold text-sm flex items-center justify-center shrink-0 shadow-sm shadow-red-950/60 select-none border border-amber-400/30">
                 {step.num}
               </div>
             </div>
